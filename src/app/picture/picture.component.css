@@ -1,0 +1,11 @@
+.big-img{
+    position: fixed;
+    top : 8vh;
+    right: 0;
+    z-index: 2;
+
+}
+
+.big-img >:nth-child(1){
+   cursor: pointer;
+}

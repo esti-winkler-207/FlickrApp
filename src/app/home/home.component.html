@@ -1,0 +1,16 @@
+
+<div  class="images-list">
+    <ul  *ngFor="let img of images">
+        <img (click)="enlargeImage(img)"  class="img" [src]="img.url_s" alt="" height="100px">
+    </ul>
+</div>
+
+<div [ngStyle]="hideLoader ? {'display' : 'none'} : {'display' : 'block'} " class="d-flex justify-content-center">
+    <div class="spinner-border" role="status">
+        <span class="sr-only" id="loading"></span>
+    </div>
+</div>
+
+
+<app-picture [ngStyle]="showLargeImg ? {'display' : 'block'} : {'display' : 'none'} " (HideLarge)="hideLargeImage($event)" [srcImage]="imageSrc"></app-picture>
+
