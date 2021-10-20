@@ -20,7 +20,7 @@ export class PictureComponent implements OnInit {
     set srcImage(srcImage: string) {
     this._srcImage = srcImage.substring(0, srcImage.length - 5);
     this._srcImage += 'z.jpg';
-    this.srcImg = this._srcImage
+  
     }
     get srcImage(): string { return this._srcImage; }
 
