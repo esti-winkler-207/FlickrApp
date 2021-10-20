@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
 
   imageSrc !: string
 
-  constructor(private callApiService : CallApiFlickerService , private router : Router) { }
+  constructor(private callApiService : CallApiFlickerService) { }
 
   ngOnInit(): void {
 
