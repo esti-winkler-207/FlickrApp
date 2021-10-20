@@ -26,7 +26,7 @@ export class PictureComponent implements OnInit {
 
   @Output() HideLarge: EventEmitter<boolean> =   new EventEmitter();  
 
-  constructor(private route: ActivatedRoute) { }
+  constructor() { }
 
   ngOnInit(): void {
 
